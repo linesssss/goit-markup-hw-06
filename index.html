@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Effective solutions
         for your business">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
 <header class="header">
 <div class="container header-container">
 <nav class="navigation">
-    <a class="logo" href="./index.html">Web<span class="logo-accent">Studio</span></a>
+    <a class="logo header-logo" href="./index.html">Web<span class="logo-accent">Studio</span></a>
     <ul class="nav-list">
         <!--Меню навігації-->
         <li class="nav-link-menu"><a class="nav-link current" href="./index.html">Studio</a></li>
@@ -30,6 +31,65 @@
         <li class="nav-link-menu"><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
     </ul>
 </address>
+
+<button class="burger-btn" type="button">
+    <svg class="burger-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-hero-menu"></use>
+    </svg>
+</button>
+</div>
+
+<div class="mobile-menu">
+    <div class="container mobile-menu-container">
+        <button class="mobile-menu-close">
+            <svg class="modal-icon-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+            <ul class="nav-list-mobile">
+                <li class="nav-link-mobile"><a class="link-mobile-menu current" href="./index.html">Studio</a></li>
+                <li class="nav-link-mobile"><a class="link-mobile-menu" href="">Portfolio</a></li>
+                <li class="nav-link-mobile"><a class="link-mobile-menu" href="">Contacts</a></li>
+            </ul>
+        </nav>
+        <address>
+            <ul class="address-list-mobile">
+                <li class="nav-link-mobile"><a class="contacts-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="nav-link-mobile"><a class="contacts-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+        <ul class="social">
+            <li class="social-image">
+                <a class="social-icon" href="">
+                    <svg class="icon-social-image" width="24" height="24">
+                     <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                 </a>
+            </li>
+            <li class="social-image">
+                <a class="social-icon" href="">
+                    <svg class="icon-social-image" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                   </svg>
+                </a>
+            </li>
+            <li class="social-image">
+                <a class="social-icon" href="">
+                    <svg class="icon-social-image" width="24" height="24">
+                     <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                 </a>
+            </li>
+            <li class="social-image">
+                <a class="social-icon" href="">
+                    <svg class="icon-social-image" width="24" height="24">
+                     <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                 </a>
+            </li>
+        </ul>
+    </div>
 </div>
 </header>
 <main>
@@ -41,6 +101,7 @@
         <button type="button" class="button">Order Service</button>
     </div>
 </section>
+
 <section class="main-content">
 <div class="container">
     <h2 hidden class="visually-hidden">content</h2>
@@ -346,7 +407,7 @@
     </div>
 </section>
 </main>
-<footer class="footer">
+<!--<footer class="footer">
 <div class="container-footer container">
    <div class="footer-content">
     <a class="logo two" href="./index.html">Web<span class="logo-accent-two">Studio</span></a>
@@ -457,6 +518,6 @@
             <button type="submit" class="modal-button">Send</button>
     </form>
     </div>
-</div>
+</div>-->
 </body>
 </html>
