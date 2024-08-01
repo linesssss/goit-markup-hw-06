@@ -98,7 +98,7 @@
         <h1 class="title-section">
              Effective Solutions for Your Business
         </h1>
-        <button type="button" class="button">Order Service</button>
+        <button type="button" class="button" data-modal-open>Order Service</button>
     </div>
 </section>
 
@@ -162,7 +162,7 @@
 </div>
 </section>
 <section class="section-two">
-    <div class="container">
+    <div class="container-team">
         <h2 class="title-section-two">Our Team</h2>
     <ul class="main-images">
         <li class="images">
@@ -316,8 +316,8 @@
     </ul>
     </div>
 </section>
-<section class="section-three">
-    <div class="container">
+<section class="section-portfolio">
+    <div class="container section-three-container">
     <h2 class="title-section-three">Our Portfolio</h2>
     <ul class="main-images-two">
         <li class="images-two">
@@ -407,7 +407,7 @@
     </div>
 </section>
 </main>
-<!--<footer class="footer">
+<footer class="footer">
 <div class="container-footer container">
    <div class="footer-content">
     <a class="logo two" href="./index.html">Web<span class="logo-accent-two">Studio</span></a>
@@ -464,9 +464,9 @@
 </div>
 </div>
 </footer>
-<div class="backdrop is-open">
+<div class="backdrop" data-modal>
     <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
             <svg class="modal-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -518,6 +518,7 @@
             <button type="submit" class="modal-button">Send</button>
     </form>
     </div>
-</div>-->
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
