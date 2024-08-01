@@ -261,28 +261,57 @@ button{
     }
 
     .nav-list-mobile{
+        display: flex;
+        flex-direction: column;
         gap: 40px;
     }
 
     .mobile-menu-nav{
         margin-bottom: auto;
-        gap: 40px;
+    }
+    .burger-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
 
-    .mobile-menu-close{
-        position: absolute;
-        top: 24px;
-        left: 24px;
-        right: 24px;
-    }
+.burger-btn:hover{
+    background-color: #404bbf;
+    border: none;
+}
+
+.burger-btn:focus{
+    background-color: #404bbf;
+    border: none;
+}
 
     .link-mobile-menu{
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 36px;
         line-height: 111%;
         letter-spacing: 0.02em;
         color: #2e2f42;
         text-decoration: none;
+        list-style-type: none;
+    }
+
+    .link-mobile-menu:hover,
+    .link-mobile-menu:focus {
+        color: #404BBF;
     }
 
     .current{
@@ -291,20 +320,39 @@ button{
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .address-list-mobile{
+    .address-mobile-menu{
+        display: flex;
+        flex-direction: column;
         gap: 24px;
+        margin-bottom: 48px;
+
     }
 
     .contacts-mobile{
-        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 20px;
-        line-height: 120%;
+        line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #4d5ae5;
-        display: block;
+        color: #434455;
         list-style-type: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
     }
+
+    .contacts-mobile:hover,
+    .contacts-mobile:focus {
+        color: #4d5ae5;
+    }
+
+    .address-list-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+    }
+
 
     .social{
         display: flex;
