@@ -418,12 +418,19 @@ button{
     .mobile-menu{
         display: none;
     }
+    .burger-btn{
+        display: none;
+    }
 }
 
 
 @media screen and (min-width: 1158px) {
     .mobile-menu{
         display: none; 
+    }
+
+    .burger-btn{
+        display: none;
     }
 }
 
@@ -674,6 +681,10 @@ button{
     margin-bottom: 72px;
 }
 
+.main-name{
+    padding: 32px 0;
+}
+
 
 .main-images{
     display: flex;
@@ -690,10 +701,7 @@ button{
                 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.main-name{
-    padding: 32px 0;
 
-}
 .title-name{
     font-weight: 500;
     font-size: 20px;
