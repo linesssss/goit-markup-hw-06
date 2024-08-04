@@ -1107,6 +1107,10 @@ button{
         text-align: left;
     }
 
+    .footer-text{
+        margin-top: 16px;
+    }
+
     .container-footer{
         max-width: 528px;
         gap: 72px 24px;
@@ -1144,7 +1148,10 @@ button{
     .footer-content{
         margin-right: 120px;
     }
-
+    
+    .two{
+        margin-bottom: 16px;
+    }
     .footer-image{
         margin-right: 80px;
     }
