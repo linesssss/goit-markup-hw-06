@@ -1096,6 +1096,12 @@ button{
         margin: 0 auto;
     }
 
+
+    .footer .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
     .two{
         margin: 0;
         text-align: left;
