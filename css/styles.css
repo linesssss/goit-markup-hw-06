@@ -23,6 +23,14 @@ ul{
     list-style-type: none;
 }
 
+input {
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -439,7 +447,7 @@ button{
 
 .section-one{
     display: block;
-    min-width: 320px;
+    max-width: 320px;
     background-color: #2e2f42;
     align-items: center;
     padding: 72px 0;
@@ -472,8 +480,9 @@ button{
 }
 
 .title-section{
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -543,49 +552,33 @@ button{
 
 @media screen and (min-width: 1158px) {
 .title-section{
-    max-width: 1158px;
     margin-bottom: 48px;
 }
 .section-one{
-    padding: 188px 0;
-    background-image: 
-    linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
-    max-width: 1158px;
+    padding: 188px 0; 
+    max-width: 1440px;
 }
-
 }
 
 .icons-main{
     display: none;
 }
 
-.main-container{
-    background-image: linear-gradient rgba(46,47,66,0.7);
-}
-
 .main-content{
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 96px 0;
 }
 
-.container-content{
+.container-content-main{
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
     max-width: 320px;
 }
 
-.one-content{
-    width: 100%;
-}
-
 .content-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -593,26 +586,22 @@ button{
 }
 
 .content{
+    color: #434455;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
 
 @media screen and (min-width: 768px) {
-    .main-container{
-        background-size: 768px 504px;
-    }
+   
 
-    .container-content{
+    .container-content-main{
         max-width: 768px;
-        flex-direction: row;
         gap: 72px 24px;
     }
     .one-content{
         width: 356px;
-        width: calc((100% - 24px) / 2);
     }
 
     .content-title{
@@ -627,19 +616,6 @@ button{
     padding: 120px 0;
 }
 
-.container-content{
-    max-width: 1158px;
-}
-.main-container{
-    max-width: 1158px;
-    gap: 24px;
- }
-
- .one-content{
-    width: calc((100% - 72px) / 4);
-}
-
-
 .icons-main{
     display: flex;
     align-items: center;
@@ -653,37 +629,35 @@ button{
 }
 
 
-
-.container-content{
-    display: flex;
+.container-content-main{
+    max-width: 1158px;
     gap: 24px;
 }
 
+.one-content{
+    width: 264px;
+}
+
 .content-title{
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
+    text-align: left;
+}
+
+.content{
+    font-weight: 400;
 }
 }
 
 
 /* Our Team */
 
-.section-two {
-    background-color: #F4F4FD;
-    padding: 96px 0;
-}
-
-
-.section-two .container {
-    max-width: 678px;
-}
 
 .container-team{
     padding: 0 28px;
 }
+
 
 .title-section-two{
     font-weight: 700;
@@ -696,12 +670,7 @@ button{
     margin-bottom: 72px;
 }
 
-.main-name{
-    padding: 32px 0;
-}
-
-
-.main-images{
+.main-images-team{
     display: flex;
     flex-wrap: wrap;
     max-width: 320px;
@@ -714,8 +683,15 @@ button{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    transition: color 240ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.section-two {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+
 
 .title-name{
     font-weight: 500;
@@ -727,6 +703,7 @@ button{
     margin-bottom: 8px;
 }
 
+
 .content-two{
     font-size: 16px;
     line-height: 1.5;
@@ -736,16 +713,11 @@ button{
     margin-bottom: 8px;
 }
 
+
 .social{
     display: flex;
     justify-content: center;
     gap: 24px;
-    
-}
-
-.social-image{
-    width: 40px;
-    height: 40px;
 }
 
 .social-icon{
@@ -766,13 +738,30 @@ button{
     background-color: #404bbf;
 }
 
+
+.social-image{
+    width: 40px;
+    height: 40px;
+}
+
+
 .icon-social-image{
     fill: #F4F4FD;
 }
 
 
+.section-two .container {
+    max-width: 678px;
+}
+
+.main-name{
+    padding: 32px 0;
+}
+
 @media screen and (min-width: 768px) {
-    .main-images{
+
+
+    .main-images-team{
       max-width: 768px;
       gap: 64px 24px;
       justify-content: center;
@@ -782,7 +771,7 @@ button{
 
 @media screen and (min-width: 1158px) {
     
-    .main-images{
+    .main-images-team{
        flex-wrap: nowrap;
        gap: 24px;
        max-width: 1158px;
@@ -801,7 +790,6 @@ button{
 
 
 .title-section-three{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
